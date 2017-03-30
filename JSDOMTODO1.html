@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- If you need to support IE 9 or IE 8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- So responsive design works in small mobile devices (phones,...) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS DOM TODO 1</title>
+</head>
+<body>
+  <div id=principal>
+  </div>
+  <script>
+    var miDiv= document.getElementById("principal");
+    var miParrafo= document.createElement("p");
+    var miem = document.createElement("em");
+    var mistrong = document.createElement("strong");
+    var texto= document.createTextNode("Paragraph with an ");
+    var textoem = document.createTextNode("emphasided");
+    var texto2 = document.createTextNode(" word and ");
+    var textostrong = document.createTextNode("others more emphasized");
+    miem.appendChild(textoem);
+    mistrong.appendChild(textostrong);
+    miParrafo.appendChild(texto);
+    miParrafo.appendChild(miem);
+    miParrafo.appendChild(texto2);
+    miParrafo.appendChild(mistrong);
+    miDiv.appendChild(miParrafo);
+  </script>
+</body>
+</html>
