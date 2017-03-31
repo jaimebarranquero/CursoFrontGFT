@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- If you need to support IE 9 or IE 8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- So responsive design works in small mobile devices (phones,...) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS EVENT TODO 1</title>
+</head>
+<body>
+  <button id="boton1">
+    BOTON 1
+  </button>
+  <button id="boton2">
+    BOTON2
+  </button>
+  <script>
+    var myButton1 = document.getElementById("boton1");
+    var myButton2 = document.getElementById("boton2");
+  function handleClick(boton){
+    alert(boton + " pushed");
+
+  }
+    myButton1.addEventListener("click",function(){handleClick("Button 1")},false);
+    myButton2.addEventListener("click",function(){handleClick("Button 2")},false);
+
+  </script>
+</body>
+</html>
