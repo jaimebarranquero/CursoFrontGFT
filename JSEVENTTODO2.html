@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS EVENT TODO 2</title>
+  </head>
+  <body>
+    <h1>Open console in chrome DevTools and write in the text area!!</h1>
+    <textarea id="texto" name="mitexto" rows="8" cols="80"></textarea>
+    <script>
+      var mytexto = document.getElementById("texto");
+      function handleClick(evento){
+        console.log(evento.key)
+      }
+      mytexto.addEventListener("keydown",handleClick,false);
+    </script>
+  </body>
+</html>
